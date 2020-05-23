@@ -16,3 +16,15 @@ const johnDoe = new ServiceMan('John', 'Doe', '1-1-1914', '1-1-1914');
 console.log(johnDoe);
 console.log(johnDoe.getFullname);
 console.log(johnDoe.getFullname());
+
+class ServiceMan2 {
+    constructor(f_name, l_name) {
+        super();
+        this.f_name = f_name;
+        this.l_name = l_name;
+    }
+
+    getFullname() {
+        return `${this.f_name} ${this.l_name}`;
+    }
+}
